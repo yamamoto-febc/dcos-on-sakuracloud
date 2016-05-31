@@ -1,0 +1,16 @@
+---
+agent_list:
+- ${agent01_private_ip}
+- ${agent02_private_ip}
+bootstrap_url: file:///opt/dcos_install_tmp
+cluster_name: DCOS_on_SakuraCloud
+exhibitor_storage_backend: static
+master_discovery: static
+master_list:
+- ${master01_private_ip}
+process_timeout: 10000
+resolvers:
+- 8.8.8.8
+- 8.8.4.4
+ssh_port: 22
+ssh_user: root
