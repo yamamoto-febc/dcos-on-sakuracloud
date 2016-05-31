@@ -10,8 +10,8 @@ module "agent02" {
     ssh_keyid = "${sakuracloud_ssh_key.key.id}"
 
     #spec
-    core = 2
-    memory = 4
+    core = "${var.spec.agent_core}"
+    memory = "${var.spec.agent_memory}"
     disk_size = 100
 }
 

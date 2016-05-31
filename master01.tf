@@ -10,8 +10,8 @@ module "master01" {
     ssh_keyid = "${sakuracloud_ssh_key.key.id}"
 
     #spec
-    core = 4
-    memory = 8 
+    core = "${var.spec.master_core}"
+    memory = "${var.spec.master_memory}"
     disk_size = 100
 }
 

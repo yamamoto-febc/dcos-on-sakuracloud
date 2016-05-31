@@ -6,3 +6,16 @@ variable "private_ip" {
         "agent02" = "192.168.2.202"
     }
 }
+
+variable "spec" {
+    default = {
+        bootstrap_core = 2
+        bootstrap_memory = 4
+        
+        master_core = 4
+        master_memory = 8
+        
+        agent_core = 2
+        agent_memory = 4
+    }
+}
